@@ -2,24 +2,25 @@ class script(object):
 
     START_TXT = """<b>ʜᴇʏ {}, <i>{}</i>
     
-ɪ ᴀᴍ ᴘᴏᴡᴇʀғᴜʟ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ᴡɪᴛʜ ʟɪɴᴋ sʜᴏʀᴛᴇɴᴇʀ ʙᴏᴛ. ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴀꜱ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ᴡɪᴛʜ ʟɪɴᴋ sʜᴏʀᴛᴇɴᴇʀ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ... ɪᴛ'ꜱ ᴇᴀꜱʏ ᴛᴏ ᴜꜱᴇ ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴀꜱ ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɪ ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ᴛʜᴇʀᴇ ᴍᴏᴠɪᴇꜱ ᴡɪᴛʜ ʏᴏᴜʀ ʟɪɴᴋ ꜱʜᴏʀᴛᴇɴᴇʀ... ♻️</b>"""
+ɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴀᴜᴛᴏ-ғɪʟᴛᴇʀ ʙᴏᴛ ᴅᴇꜱɪɢɴᴇᴅ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴀɴᴅ ᴅᴇʟɪᴠᴇʀ ᴍᴏᴠɪᴇꜱ ʙᴀꜱᴇᴅ ᴏɴ ᴜꜱᴇʀ ʀᴇQᴜᴇꜱᴛꜱ. ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ ᴏʀɢᴀɴɪᴢᴇ, ꜱᴏʀᴛ, ᴀɴᴅ ᴍᴀɴᴀɢᴇ ʟɪɴᴋꜱ ᴇᴀꜱɪʟʏ!...♻️\n\n
+‣ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/hacker_x_official_777'>ʜᴀᴄᴋᴇʀ_x_ᴏғғɪᴄɪᴀʟ_𝟽𝟽𝟽</a></b>"""
 
-    MY_ABOUT_TXT = """★ Server: <a href=https://www.heroku.com>Heroku</a>
-★ Database: <a href=https://www.mongodb.com>MongoDB</a>
-★ Language: <a href=https://www.python.org>Python</a>
-★ Library: <a href=https://pyrogram.org>Pyrogram</a>"""
+    MY_ABOUT_TXT = """<b>★ ꜱᴇʀᴠᴇʀ : <a href=https://www.koyeb.com>ᴋᴏʏᴇʙ</a>
+★ ᴅᴀᴛᴀʙᴀꜱᴇ: <a href=https://www.mongodb.com>ᴍᴏɴɢᴏᴅʙ</a>
+★ ʟᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org>ᴘʏᴛʜᴏɴ</a>
+★ ʟɪʙʀᴀʀʏ: <a href=https://pyrogram.org>ᴘʏʀᴏɢʀᴀᴍ</a></b>"""
 
-    MY_OWNER_TXT = """★ Name: HA Bots
-★ Username: @HA_Bots
-★ Country: Sri Lanka 🇱🇰"""
+    MY_OWNER_TXT = """<b>★ ᴍʏ ɴᴀᴍᴇ: <a href="https://t.me/Spideycinemax_ai_bot">@ꜱᴘɪᴅᴇʏᴄɪɴᴇᴍᴀx_ᴀɪ_ʙᴏᴛ</a> 
+★ ᴜꜱᴇʀɴᴀᴍᴇ: <a href="https://t.me/hacker_x_official_777" target="_blank">ʜᴀᴄᴋᴇʀ_x_ᴏꜰꜰɪᴄɪᴀʟ_777</a>
+★ ᴄᴏᴜɴᴛʀʏ: ɪɴᴅɪᴀ </b>"""
 
-    STATUS_TXT = """🗂 Total Files: <code>{}</code>
-👤 Total Users: <code>{}</code>
-👥 Total Chats: <code>{}</code>
-🤑 Premium Users: <code>{}</code>
-✨ Used Storage: <code>{}</code>
-🗳 Free Storage: <code>{}</code>
-🚀 Bot Uptime: <code>{}</code>"""
+    STATUS_TXT = """<b>🗂 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{}</code>
+👤 ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ : <code>{}</code>
+👥 ᴛᴏᴛᴀʟ ᴄʜᴀᴛꜱ : <code>{}</code>
+🤑 ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀꜱ : <code>{}</code>
+✨ ᴜꜱᴇᴅ ꜱᴛᴏʀᴀɢᴇ : <code>{}</code>
+🗳 ꜰʀᴇᴇ ꜱᴛᴏʀᴀɢᴇ : <code>{}</code>
+🚀 ʙᴏᴛ ᴜᴘᴛɪᴍᴇ : <code>{}</code></b>"""
 
     NEW_GROUP_TXT = """#NewGroup
 Title - {}
@@ -28,16 +29,12 @@ Username - {}
 Total - <code>{}</code>"""
 
     NEW_USER_TXT = """#NewUser
-★ Name: {}
-★ ID: <code>{}</code>"""
+★ ɴᴀᴍᴇ: {}
+★ ɪᴅ: <code>{}</code>"""
 
-    NOT_FILE_TXT = """👋 Hello {},
+    NOT_FILE_TXT = """<b>👋 ʜᴇʟʟᴏ {},  ɪ ᴄᴀɴ'ᴛ ꜰɪɴᴅ ᴛʜᴇ <b>{}</b> ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀꜱᴇ! 🥲 
 
-I can't find the <b>{}</b> in my database! 🥲
-
-👉 Google Search and check your spelling is correct.
-👉 Please read the Instructions to get better results.
-👉 Or not been released yet."""
+👉 ɢᴏᴏɢʟᴇ ꜱᴇᴀʀᴄʜ ᴀɴᴅ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ꜱᴘᴇʟʟɪɴɢ ɪꜱ ᴄᴏʀʀᴇᴄᴛ. 👉 ᴘʟᴇᴀꜱᴇ ʀᴇᴀᴅ ᴛʜᴇ ɪɴꜱᴛʀᴜᴄᴛɪᴏɴꜱ ᴛᴏ ɢᴇᴛ ʙᴇᴛᴛᴇʀ ʀᴇꜱᴜʟᴛꜱ. 👉 ᴏʀ ɴᴏᴛ ʙᴇᴇɴ ʀᴇʟᴇᴀꜱᴇᴅ ʏᴇᴛ.</b>"""
     
     EARN_TXT = """<b>ʜᴏᴡ ᴛᴏ ᴇᴀʀɴ ꜰʀᴏᴍ ᴛʜɪs ʙᴏᴛ
 
@@ -67,17 +64,17 @@ I can't find the <b>{}</b> in my database! 🥲
 
 📝 ɴᴏᴛᴇ:- ʏᴏᴜ sʜᴏᴜʟᴅ ɴᴏᴛ ʙᴇ ᴀɴ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ ɪɴ ɢʀᴏᴜᴘ. sᴇɴᴅ ᴄᴏᴍᴍᴀɴᴅ ᴡɪᴛʜᴏᴜᴛ ʙᴇɪɴɢ ᴀɴ ᴀɴᴏɴʏᴍᴜs ᴀᴅᴍɪɴ.</b>"""
 
-    IMDB_TEMPLATE = """✅ I Found: <code>{query}</code>
+    IMDB_TEMPLATE = """✅ ɪ ꜰᴏᴜɴᴅ: <code>{query}</code>
 
-🏷 Title: <a href={url}>{title}</a>
-🎭 Genres: {genres}
-📆 Year: <a href={url}/releaseinfo>{year}</a>
-🌟 Rating: <a href={url}/ratings>{rating} / 10</a>
-☀️ Languages: {languages}
-📀 RunTime: {runtime} Minutes
+🏷 ᴛɪᴛʟᴇ : <a href={url}>{title}</a>
+🎭 ɢᴇɴʀᴇꜱ : {genres}
+📆 ʏᴇᴀʀ : <a href={url}/releaseinfo>{year}</a>
+🌟 ʀᴀᴛɪɴɢ : <a href={url}/ratings>{rating} / 10</a>
+☀️ ʟᴀɴɢᴜᴀɢᴇꜱ : {languages}
+📀 ʀᴜɴᴛɪᴍᴇ : {runtime} Minutes
 
-🗣 Requested by: {message.from_user.mention}
-©️ Powered by: <b>{message.chat.title}</b>"""
+🗣 ʀᴇQᴜᴇꜱᴛᴇᴅ ʙʏ : {message.from_user.mention}
+©️ <b>ᴘᴏᴡᴇʀᴇᴅ ʙʏ:<a href='https://t.me/hacker_x_official_777'>@ʜᴀᴄᴋᴇʀ_x_ᴏꜰꜰɪᴄɪᴀʟ_777</a></b>"""
 
     FILE_CAPTION = """<i>{file_name}</i>
 
@@ -85,7 +82,7 @@ I can't find the <b>{}</b> in my database! 🥲
 
     WELCOME_TEXT = """👋 Hello {mention}, Welcome to {title} group! 💞"""
 
-    HELP_TXT = """<b>Note - <spoiler>Try each command without any argument to see more details 😹</spoiler></b>"""
+    HELP_TXT = """<b>ɴᴏᴛᴇ - <spoiler>ᴛʀʏ ᴇᴀᴄʜ ᴄᴏᴍᴍᴀɴᴅ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴀʀɢᴜᴍᴇɴᴛ ᴛᴏ ꜱᴇᴇ ᴍᴏʀᴇ ᴅᴇᴛᴀɪʟꜱ😹</spoiler></b>"""
     
     ADMIN_COMMAND_TXT = """<b>Here is bot admin commands 👇
 
@@ -127,9 +124,10 @@ I can't find the <b>{}</b> in my database! 🥲
 
 - ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
 
-- ꜱᴏᴜʀᴄᴇ - <a href=https://github.com/HA-Bots/Auto-Filter-Bot>ʜᴇʀᴇ</a>
+- ꜱᴜʙꜱᴄʀɪʙᴇ ᴛᴏ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ - <a href=https://youtube.com/@spidey_official_777>ꜱᴘɪᴅᴇʏ ᴏꜰꜰɪᴄɪᴀʟ</a>
 
-- ᴅᴇᴠʟᴏᴘᴇʀ - @HA_Bots"""
+- ᴅᴇᴠʟᴏᴘᴇʀ - <a href="https://t.me/hacker_x_official_777" target="_blank">ʜᴀᴄᴋᴇʀ_x_ᴏꜰꜰɪᴄɪᴀʟ_777</a>
+</b>"""
 
     PREMIUM_PLAN_TEXT = """<b><i><u>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs - </u>
 
@@ -141,8 +139,7 @@ I can't find the <b>{}</b> in my database! 🥲
 <u>🎁 ᴘʀᴇᴍɪᴜᴍ ғᴇᴀᴛᴜʀᴇs 🎁</u>
 
 ○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ
-○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ
-○ ᴅɪʀᴇᴄᴛ ғɪʟᴇs   
+○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴏᴘᴇɴ ʟɪɴ○ ᴅɪʀᴇᴄᴛ ғɪʟᴇs   
 ○ ᴀᴅ-ғʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ 
 ○ ʜɪɢʜ-sᴘᴇᴇᴅ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ                           
 ○ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs & sᴇʀɪᴇs                                                                         
