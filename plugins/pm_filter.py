@@ -119,7 +119,7 @@ async def group_search(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer(f"⚠️ Wᴀʀɴɪɴɢ ⚠️\n\n Hᴇʟʟᴏ {query.from_user.first_name},\nDᴏɴ'ᴛ Cʟɪᴄᴋ Oᴛʜᴇʀ Rᴇsᴜʟᴛs!", show_alert=True)
+        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -202,7 +202,7 @@ async def next_page(bot, query):
 async def languages_(client: Client, query: CallbackQuery):
     _, key, req, offset = query.data.split("#")
     if int(req) != query.from_user.id:
-        return await query.answer(f"⚠️ Wᴀʀɴɪɴɢ ⚠️\n\n Hᴇʟʟᴏ {query.from_user.first_name},\nDᴏɴ'ᴛ Cʟɪᴄᴋ Oᴛʜᴇʀ Rᴇsᴜʟᴛs!", show_alert=True)
+        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
     btn = [
         [InlineKeyboardButton(text=LANGUAGES[i].title(), callback_data=f"lang_search#{LANGUAGES[i]}#{key}#{offset}#{req}"),
          InlineKeyboardButton(text=LANGUAGES[i+1].title(), callback_data=f"lang_search#{LANGUAGES[i+1]}#{key}#{offset}#{req}")]
@@ -215,7 +215,7 @@ async def languages_(client: Client, query: CallbackQuery):
 async def quality(client: Client, query: CallbackQuery):
     _, key, req, offset = query.data.split("#")
     if int(req) != query.from_user.id:
-        return await query.answer(f"⚠️ Wᴀʀɴɪɴɢ ⚠️\n\n Hᴇʟʟᴏ {query.from_user.first_name},\nDᴏɴ'ᴛ Cʟɪᴄᴋ Oᴛʜᴇʀ Rᴇsᴜʟᴛs!", show_alert=True)
+        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
     btn = [
         [InlineKeyboardButton(text=QUALITY[i].title(), callback_data=f"qual_search#{QUALITY[i]}#{key}#{offset}#{req}"),
          InlineKeyboardButton(text=QUALITY[i+1].title(), callback_data=f"qual_search#{QUALITY[i+1]}#{key}#{offset}#{req}")]
@@ -228,7 +228,7 @@ async def quality(client: Client, query: CallbackQuery):
 async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     _, lang, key, offset, req = query.data.split("#")
     if int(req) != query.from_user.id:
-        return await query.answer(f"⚠️ Wᴀʀɴɪɴɢ ⚠️\n\n Hᴇʟʟᴏ {query.from_user.first_name},\nDᴏɴ'ᴛ Cʟɪᴄᴋ Oᴛʜᴇʀ Rᴇsᴜʟᴛs!", show_alert=True)
+        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
 
     search = BUTTONS.get(key)
     cap = CAP.get(key)
@@ -284,7 +284,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
 async def lang_next_page(bot, query):
     ident, req, key, lang, l_offset, offset = query.data.split("#")
     if int(req) != query.from_user.id:
-        return await query.answer(f"⚠️ Wᴀʀɴɪɴɢ ⚠️\n\n Hᴇʟʟᴏ {query.from_user.first_name},\nDᴏɴ'ᴛ Cʟɪᴄᴋ Oᴛʜᴇʀ Rᴇsᴜʟᴛs!", show_alert=True)
+        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
     try:
         l_offset = int(l_offset)
     except:
@@ -360,7 +360,7 @@ async def lang_next_page(bot, query):
 async def quality_search(client: Client, query: CallbackQuery):
     _, qual, key, offset, req = query.data.split("#")
     if int(req) != query.from_user.id:
-        return await query.answer(f"⚠️ Wᴀʀɴɪɴɢ ⚠️\n\n Hᴇʟʟᴏ {query.from_user.first_name},\nDᴏɴ'ᴛ Cʟɪᴄᴋ Oᴛʜᴇʀ Rᴇsᴜʟᴛs!", show_alert=True)
+        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
     search = BUTTONS.get(key)
     cap = CAP.get(key)
     if not search:
@@ -406,7 +406,7 @@ async def quality_search(client: Client, query: CallbackQuery):
 async def quality_next_page(bot, query):
     ident, req, key, qual, l_offset, offset = query.data.split("#")
     if int(req) != query.from_user.id:
-        return await query.answer(f"⚠️ Wᴀʀɴɪɴɢ ⚠️\n\n Hᴇʟʟᴏ {query.from_user.first_name},\nDᴏɴ'ᴛ Cʟɪᴄᴋ Oᴛʜᴇʀ Rᴇsᴜʟᴛs!", show_alert=True)
+        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
     try:
         l_offset = int(l_offset)
     except:
@@ -476,7 +476,7 @@ async def quality_next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, id, user = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer(f"⚠️ Wᴀʀɴɪɴɢ ⚠️\n\n Hᴇʟʟᴏ {query.from_user.first_name},\nDᴏɴ'ᴛ Cʟɪᴄᴋ Oᴛʜᴇʀ Rᴇsᴜʟᴛs!", show_alert=True)
+        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
     movie = await get_poster(id, id=True)
     search = movie.get('title')
     s = await query.message.edit_text(f"<b><i><code>{search}</code> Check In My Database...</i></b>")
@@ -502,7 +502,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         except:
             user = query.from_user.id
         if int(user) != 0 and query.from_user.id != int(user):
-            return await query.answer(f"Hᴇʟʟᴏ {query.from_user.first_name},\nTʜɪs Is Nᴏᴛ Fᴏʀ Yᴏᴜ!", show_alert=True)
+            return await query.answer(f"Hello {query.from_user.first_name},\nThis Is Not For You!", show_alert=True)
         await query.answer("Closed!")
         await query.message.delete()
         try:
@@ -517,7 +517,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         except:
             user = query.message.from_user.id
         if int(user) != 0 and query.from_user.id != int(user):
-            return await query.answer(f"⚠️ Wᴀʀɴɪɴɢ ⚠️\n\n Hᴇʟʟᴏ {query.from_user.first_name},\nDᴏɴ'ᴛ Cʟɪᴄᴋ Oᴛʜᴇʀ Rᴇsᴜʟᴛs!", show_alert=True)
+            return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
         await query.answer(url=f"https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file_id}")
 
     elif query.data.startswith("get_del_file"):
@@ -564,9 +564,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         settings = await get_settings(int(mc.split("_", 2)[1]))
         btn = await is_subscribed(client, query, settings['fsub'])
         if btn:
-            await query.answer(f"Hᴇʟʟᴏ {query.from_user.first_name},\nPʟᴇᴀsᴇ ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.", show_alert=True)
+            await query.answer(f"Hello {query.from_user.first_name},\nPlease join my updates channel and try again.", show_alert=True)
             btn.append(
-                [InlineKeyboardButton("🔁 Tʀʏ Aɢᴀɪɴ 🔁", callback_data=f"checksub#{mc}")]
+                [InlineKeyboardButton("🔁 Try Again 🔁", callback_data=f"checksub#{mc}")]
             )
             await query.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(btn))
             return
@@ -578,17 +578,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         user_id = query.from_user.id
         settings = await get_settings(int(query.message.chat.id))
         if userid == 0:
-            await query.answer("Yᴏᴜ ᴀʀᴇ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ !", show_alert=True)
+            await query.answer("You are anonymous admin !", show_alert=True)
             return
         if userid != user_id:
-            await query.answer("Nᴏᴛ Fᴏʀ Yᴏᴜ ☠️", show_alert=True)
+            await query.answer("Not For You ☠️", show_alert=True)
             return
         btn = await is_subscribed(client, query, settings['fsub'])
         if btn:
-           await query.answer("Kɪɴᴅʟʏ Jᴏɪɴ Gɪᴠᴇɴ Cʜᴀɴɴᴇʟ Tᴏ Gᴇᴛ Uɴᴍᴜᴛᴇ", show_alert=True)
+           await query.answer("Kindly Join Given Channel To Get Unmute", show_alert=True)
         else:
             await client.unban_chat_member(query.message.chat.id, user_id)
-            await query.answer("Uɴᴍᴜᴛᴇᴅ Sᴜᴄᴄᴇssғᴜʟʟʏ !", show_alert=True)
+            await query.answer("Unmuted Successfully !", show_alert=True)
             try:
                 await query.message.delete()
             except:
@@ -608,7 +608,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🧑‍💻 ꜱᴜᴘᴘᴏʀᴛ', url=SUPPORT_LINK)
         ],[
             InlineKeyboardButton('👨‍🚒 ʜᴇʟᴘ', callback_data='help'),
-            
+            InlineKeyboardButton('🔎 ɪɴʟɪɴᴇ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('📚 ᴀʙᴏᴜᴛ', callback_data='about')
         ],[
             InlineKeyboardButton('💰 ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ ʙʏ ʙᴏᴛ 💰', callback_data='earn')
@@ -638,7 +638,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "stats":
         if query.from_user.id not in ADMINS:
-            return await query.answer("Aᴅᴍɪɴs Oɴʟʏ !", show_alert=True)
+            return await query.answer("ADMINS Only!", show_alert=True)
         files = await Media.count_documents()
         users = await db.total_users_count()
         chats = await db.total_chat_count()
@@ -742,7 +742,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ident, set_type, status, grp_id = query.data.split("#")
         userid = query.from_user.id if query.from_user else None
         if not await is_check_admin(client, int(grp_id), userid):
-            await query.answer("Tʜɪs Is Nᴏᴛ Fᴏʀ Yᴏᴜ! ☠️", show_alert=True)
+            await query.answer("This Is Not For You!", show_alert=True)
             return
 
         if status == "True":
@@ -806,7 +806,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("send_all"):
         ident, key, req = query.data.split("#")
         if int(req) != query.from_user.id:
-            return await query.answer(f"⚠️ Wᴀʀɴɪɴɢ ⚠️\n\n Hᴇʟʟᴏ {query.from_user.first_name},\nDᴏɴ'ᴛ Cʟɪᴄᴋ Oᴛʜᴇʀ Rᴇsᴜʟᴛs!", show_alert=True)        
+            return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)        
         files = temp.FILES.get(key)
         if not files:
             await query.answer(f"Hello {query.from_user.first_name},\nSend New Request Again!", show_alert=True)
@@ -815,7 +815,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "unmute_all_members":
         if not await is_check_admin(client, query.message.chat.id, query.from_user.id):
-            await query.answer("Tʜɪs Is Nᴏᴛ Fᴏʀ Yᴏᴜ! ☠️", show_alert=True)
+            await query.answer("This Is Not For You!", show_alert=True)
             return
         users_id = []
         await query.message.edit("Unmute all started! This process maybe get some time...")
@@ -836,7 +836,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "unban_all_members":
         if not await is_check_admin(client, query.message.chat.id, query.from_user.id):
-            await query.answer("Tʜɪs Is Nᴏᴛ Fᴏʀ Yᴏᴜ! ☠️", show_alert=True)
+            await query.answer("This Is Not For You!", show_alert=True)
             return
         users_id = []
         await query.message.edit("Unban all started! This process maybe get some time...")
@@ -857,7 +857,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "kick_muted_members":
         if not await is_check_admin(client, query.message.chat.id, query.from_user.id):
-            await query.answer("Tʜɪs Is Nᴏᴛ Fᴏʀ Yᴏᴜ! ☠️", show_alert=True)
+            await query.answer("This Is Not For You!", show_alert=True)
             return
         users_id = []
         await query.message.edit("Kick muted users started! This process maybe get some time...")
@@ -878,7 +878,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "kick_deleted_accounts_members":
         if not await is_check_admin(client, query.message.chat.id, query.from_user.id):
-            await query.answer("Tʜɪs Is Nᴏᴛ Fᴏʀ Yᴏᴜ! ☠️", show_alert=True)
+            await query.answer("This Is Not For You!", show_alert=True)
             return
         users_id = []
         await query.message.edit("Kick deleted accounts started! This process maybe get some time...")
